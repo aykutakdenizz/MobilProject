@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/MainMenuNewReminder"
+        android:title="Özel Tarihli Etkinlik Oluştur"/>
+    <item
+        android:id="@+id/MainMenuRepeatReminder"
+        android:title="Tekrarlı Etkinlik Oluştur"/>
+
+    <item
+        android:id="@+id/MainMenuThema"
+        android:title="Uygulama Temasını Değiştir"/>
+</menu>

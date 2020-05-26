@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/UpdateMenuShare"
+        android:title="Paylaş"/>
+    <item
+        android:id="@+id/UpdateMenuLocation"
+        android:title="Konumu göster"/>
+    <item
+        android:id="@+id/UpdateMenuSave"
+        android:title="Değişiklikleri kaydet"/>
+    <item
+        android:id="@+id/UpdateMenuDelete"
+        android:title="Etkinliği sil"/>
+</menu>

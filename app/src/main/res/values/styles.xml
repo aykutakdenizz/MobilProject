@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#206686</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="myTextColor">@color/siyah</item>
+        <item name="myTextColorPurple">#370079</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorPrimary">#010D53</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="myTextColor">@color/Beyaz</item>
+        <item name="myTextColorPurple">#AA90FC</item>
+
+
+        <!--<item name="android:textColor">#FFFFFF</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+        <item name="android:popupBackground">#000000</item>
+        <item name="android:background">#000000</item>-->
+    </style>
+    <style name="myDialogTheme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">#180747</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/siyah</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/colorAccent</item> <!--selected day-->
+        <item name="android:textColorPrimary">#5BA1D6</item> <!--days of the month-->
+        <item name="android:textColorSecondary">#2696A3</item>    <!--days of the week-->
+    </style>
+
+</resources>

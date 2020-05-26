@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Takvim</string>
+
+    <string name="SQLDB">CREATE TABLE IF NOT EXISTS reminders (id INTEGER PRIMARY KEY, type VARCHAR, color VARCHAR, date VARCHAR,
+    frequency VARCHAR, remindbefore VARCHAR, body VARCHAR, completed VARCHAR, ringtone VARCHAR, title VARCHAR,
+    alarm VARCHAR,finishdate VARCHAR,time VARCHAR, latitude VARCHAR, longitude VARCHAR)</string>
+    <string name="SQLInsert">INSERT INTO reminders (type, color, date, frequency, remindbefore, body, completed, ringtone, title, alarm, finishdate, time, latitude, longitude) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)</string>
+    <string-array name="MainSpinnerDateStrings">
+        <item>Tüm</item>
+        <item>Günlük</item>
+        <item>Haftalık</item>
+        <item>Aylık</item>
+    </string-array>
+    <string-array name="MainSpinnerTypeStrings">
+        <item>Tüm</item>
+        <item>Genel</item>
+        <item>Özel</item>
+        <item>Doğum Günü</item>
+        <item>Etkinlik</item>
+        <item>Toplantı</item>
+        <item>Görev</item>
+    </string-array>
+    <string-array name="MainSpinnerTypeValues">
+        <item>Genel</item>
+        <item>Özel</item>
+        <item>Doğum Günü</item>
+        <item>Etkinlik</item>
+        <item>Toplantı</item>
+        <item>Görev</item>
+    </string-array>
+    <string-array name="ColorSpinnerString">
+        <item>Beyaz</item>
+        <item>Sarı</item>
+        <item>Kırmızı</item>
+        <item>Mor</item>
+        <item>Mavi</item>
+        <item>Yeşil</item>
+    </string-array>
+    <string-array name="ringtoneNames">
+        <item>alarm</item>
+        <item>juntos</item>
+        <item>ring</item>
+        <item>serious-strike</item>
+        <item>slow</item>
+    </string-array>
+    <string-array name="FrequencySpinnerString">
+        <item>Bir Kez</item>
+        <item>Her Gün</item>
+        <item>Haftada Bir</item>
+        <item>Ayda Bir</item>
+        <item>Yılda Bir</item>
+    </string-array>
+    <string-array name="share">
+        <item>Email ile paylaş</item>
+        <item>Sosyal medyada paylaş</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+    <!-- Uygulamadaki layout stringleri -->
+
+    <!--activity_calendar-->
+    <string name="Calendar_top_string">Lütfen tarih seçiniz:</string>
+    <string name="Button_sec">Seç</string>
+
+    <!-- activity_main-->
+    <string name="Main_CheckNumber">Yapılanlar 0/0</string>
+    <string name="Main_List_Date">Listeleme Zamanı</string>
+    <string name="Main_List_Type">Tür</string>
+    <string name="Main_Date">gg/aa/yyyy - gg/aa/yyyy</string>
+
+    <!-- activity_note-->
+    <string name="Note_main_title">ETKİNLİK DETAYLARI</string>
+    <string name="Note_title">Etkinliğin Başlığı:</string>
+    <string name="Note_title_hint">Başlığı buraya yazınız&#8230;</string>
+    <string name="Note_body_hint">Notunuzu buraya yazınız&#8230;</string>
+    <string name="Button_kaydet">Kaydet</string>
+    <string name="Button_sil">Sil</string>
+
+    <!-- activity_set_reminder-->
+    <string name="Reminder_date_string">-Özel bir gün seçilmedi-</string>
+    <string name="Reminder_date">Tarih:</string>
+    <string name="Reminder_finish_date">Bitiş Tarihi</string>
+    <string name="Reminder_Type">Tür</string>
+    <string name="Reminder_Color">Renk</string>
+    <string name="Reminder_Ringtone">Zil Sesi</string>
+    <string name="Reminder_Frequency">Sıklık</string>
+    <string name="Reminder_Time">Saat</string>
+    <string name="Reminder_Alarm">Alarm</string>
+    <string name="Reminder_Before">Öncesinde Anımsat</string>
+    <string name="Reminder_Hint_Hour">HH</string>
+    <string name="Reminder_Hint_Minute">MM</string>
+    <string name="Add_Date_Button">Tarih Ekle</string>
+    <string name="Add_time_Button">Saat Ekle</string>
+    <string name="Date_Format">GG/AA/YYYY</string>
+
+    <!-- activity_update_reminder-->
+    <string name="Reminder_title">Başlık</string>
+    <string name="Reminder_body_title">İçerik</string>
+
+    <!-- item_for_list-->
+    <string name="Item_title">Başlık</string>
+    <string name="Item_Type">Tür</string>
+    <string name="Item_Date">Tarih:</string>
+    <string name="Item_title_dummyValue">(başlık)</string>
+    <string name="Item_Type_dummyValue">(tür)</string>
+    <string name="Item_Date_dummyValue">(gg/aa/yyyy - gg/aa/yyyy)</string>
+    <string name="Item_check_string">Yapıldı mı?</string>
+
+</resources>

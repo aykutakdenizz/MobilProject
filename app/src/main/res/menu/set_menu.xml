@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/SetMenuNote"
+        android:title="Not ekle"/>
+    <item
+        android:id="@+id/SetMenuLocation"
+        android:title="Konum ekle"/>
+    <item
+        android:id="@+id/SetMenuSave"
+        android:title="Kaydet"/>
+</menu>

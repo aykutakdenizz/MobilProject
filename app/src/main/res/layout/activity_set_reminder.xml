@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/SetMainLayout"
+    tools:context=".SetReminderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/SelectDateText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/Reminder_date_string"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/Reminder_finish_date" />
+
+            <TextView
+                android:id="@+id/SelectFinishDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:hint="@string/Date_Format"/>
+            <Button
+                android:id="@+id/SelectFinishDateButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_blue"
+                android:text="@string/Add_Date_Button"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Reminder_Type" />
+
+            <Spinner
+                android:id="@+id/SelectSpinnerType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Reminder_Color" />
+
+            <Spinner
+                android:id="@+id/SelectSpinnerColor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Reminder_Ringtone" />
+
+            <Spinner
+                android:id="@+id/SelectSpinnerRingTone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/SelectLinearLayoutFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/Reminder_Frequency" />
+            <Spinner
+                android:id="@+id/SelectSpinnerFrequency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="@string/Reminder_Time"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/SelectCheckboxAlarmHour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:inputType="number"
+                android:hint="@string/Reminder_Hint_Hour"/>
+            <EditText
+                android:id="@+id/SelectCheckboxAlarmMinute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:inputType="number"
+                android:hint="@string/Reminder_Hint_Minute"/>
+            <Button
+                android:id="@+id/SelectTimeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/shape_blue"
+                android:text="@string/Add_time_Button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/SelectCheckboxAlarm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/Reminder_Alarm" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/SelectLinearLayoutRemindBefore"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/border_note"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/SelectCheckboxBefore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="@string/Reminder_Before" />
+
+            <EditText
+                android:id="@+id/SelectCheckboxBeforeHour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:inputType="number"
+                android:hint="@string/Reminder_Hint_Hour"/>
+            <EditText
+                android:id="@+id/SelectCheckboxBeforeMinute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:inputType="number"
+                android:hint="@string/Reminder_Hint_Minute"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
